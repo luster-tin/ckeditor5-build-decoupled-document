@@ -35,96 +35,103 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 
-export default class DecoupledEditor extends DecoupledEditorBase {}
+export default class DecoupledEditor extends DecoupledEditorBase {
+}
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
-	Essentials,
-	Alignment,
-	FontSize,
-	FontFamily,
-	Highlight,
-	UploadAdapter,
-	Autoformat,
-	Bold,
-	Italic,
-	Strikethrough,
-	Underline,
-	BlockQuote,
-	CKFinder,
-	EasyImage,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Indent,
-	IndentBlock,
-	Link,
-	List,
-	MediaEmbed,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar
+  Essentials,
+  Alignment,
+  FontSize,
+  FontFamily,
+  Highlight,
+  UploadAdapter,
+  Autoformat,
+  Bold,
+  Italic,
+  Strikethrough,
+  Underline,
+  BlockQuote,
+  CKFinder,
+  EasyImage,
+  Heading,
+  Image,
+  ImageCaption,
+  ImageStyle,
+  ImageToolbar,
+  ImageUpload,
+  Indent,
+  IndentBlock,
+  Link,
+  List,
+  MediaEmbed,
+  Paragraph,
+  PasteFromOffice,
+  Table,
+  TableToolbar,
+  FontColor,
+  FontBackgroundColor
 ];
 
 // Editor configuration.
 DecoupledEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			'heading',
-			'|',
-			'fontsize',
-			'fontfamily',
-			'|',
-			'bold',
-			'italic',
-			'underline',
-			'strikethrough',
-			'highlight',
-			'|',
-			'alignment',
-			'|',
-			'numberedList',
-			'bulletedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'link',
-			'blockquote',
-			'imageUpload',
-			'insertTable',
-			'mediaEmbed',
-			'|',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		styles: [
-			'full',
-			'alignLeft',
-			'alignRight'
-		],
-		toolbar: [
-			'imageStyle:alignLeft',
-			'imageStyle:full',
-			'imageStyle:alignRight',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+  toolbar: {
+	items: [
+	  'heading',
+	  '|',
+	  'fontsize',
+	  'fontfamily',
+	  'fontcolor',
+	  'fontbackgroundcolor',
+	  '|',
+	  'bold',
+	  'italic',
+	  'underline',
+	  'strikethrough',
+	  'highlight',
+	  '|',
+	  'alignment',
+	  '|',
+	  'numberedList',
+	  'bulletedList',
+	  '|',
+	  'indent',
+	  'outdent',
+	  '|',
+	  'link',
+	  'blockquote',
+	  'imageUpload',
+	  'insertTable',
+	  'mediaEmbed',
+	  '|',
+	  'undo',
+	  'redo'
+	]
+  },
+  image: {
+	styles: [
+	  'full',
+	  'alignLeft',
+	  'alignRight'
+	],
+	toolbar: [
+	  'imageStyle:alignLeft',
+	  'imageStyle:full',
+	  'imageStyle:alignRight',
+	  '|',
+	  'imageTextAlternative'
+	]
+  },
+  table: {
+	contentToolbar: [
+	  'tableColumn',
+	  'tableRow',
+	  'mergeTableCells'
+	]
+  },
+  // This value must be kept in sync with the language defined in webpack.config.js.
+  language: 'en'
 };
