@@ -11,7 +11,7 @@ import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
-// import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
@@ -20,7 +20,6 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 // import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-// import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
@@ -49,7 +48,7 @@ DecoupledEditor.builtinPlugins = [
   FontSize,
   FontFamily,
   Highlight,
-  // UploadAdapter,
+  UploadAdapter,
   SimpleUploadAdapter,
   Autoformat,
   Bold,
@@ -58,7 +57,6 @@ DecoupledEditor.builtinPlugins = [
   Underline,
   BlockQuote,
   // CKFinder,
-  // EasyImage,
   Heading,
   Image,
   ImageCaption,
