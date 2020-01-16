@@ -80,6 +80,10 @@ DecoupledEditor.builtinPlugins = [
 DecoupledEditor.defaultConfig = {
   toolbar: {
 	items: [
+	  'imageUpload',
+	  'mediaEmbed',
+	  'link',
+	  '|',
 	  'heading',
 	  '|',
 	  'fontsize',
@@ -87,11 +91,14 @@ DecoupledEditor.defaultConfig = {
 	  'fontcolor',
 	  'fontbackgroundcolor',
 	  '|',
+	  'blockquote',
 	  'bold',
 	  'italic',
 	  'underline',
 	  'strikethrough',
 	  'highlight',
+	  '|',
+	  'insertTable',
 	  '|',
 	  'alignment',
 	  '|',
@@ -100,12 +107,6 @@ DecoupledEditor.defaultConfig = {
 	  '|',
 	  'indent',
 	  'outdent',
-	  '|',
-	  'link',
-	  'blockquote',
-	  'imageUpload',
-	  'insertTable',
-	  'mediaEmbed',
 	  '|',
 	  'undo',
 	  'redo'
